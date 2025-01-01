@@ -32,9 +32,18 @@
   }
   .poppinslight {
     font-family: "Poppins", serif;
-    font-weight: 300;
+    font-weight: 200;
     font-style: normal;
   }
+  .inputtext{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    }
   .menu{
     position:fixed;
      width:50%;
