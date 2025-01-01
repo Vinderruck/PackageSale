@@ -12,8 +12,8 @@ const UserSignUp = () => {
   const handleclick = () => {
     // Display the message every 100ms
     const Timer = setInterval(() => {
-      setError("Hi client, this is just a Template for a real Site. Please contact the Developer +2547003173");
-    }, 200);
+      setError("Hi client, this is just a Template for a real Site. Please contact the Developer +254700317320");
+    }, 900);
   
     // Stop the interval and clear the message after a certain time (e.g., 2 seconds)
     setTimeout(() => {
