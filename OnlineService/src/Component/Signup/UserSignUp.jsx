@@ -38,7 +38,7 @@ const UserSignUp = () => {
             </li>
           </ul>
         </div>
-        <Button onClick={handleclick}  className="d-lg-block d-none" style={{background:"white",color:"black",borderRadius:'50px',width:"10%"}}>Sign Up</Button>
+        <Button onClick={handleclick}    className="d-lg-block d-none poppinslight" style={{background:"white",color:"black",borderRadius:'50px',width:"10%"}}>Sign Up</Button>
     
       <div className="d-lg-none" style={{width:"35px",height:"35px",marginRight:"1rem",position:"relative"}}>
       <MdMenuOpen onClick={()=>setmenu(!menu)} style={{color:"white",width:"100%",height:"100%"}}/>
@@ -79,8 +79,7 @@ const UserSignUp = () => {
 
 
 
-
-<Button onClick={handleclick} style={{background:"white",color:"black",borderRadius:'50px',width:"50%"}}>Start for free &nbsp;<FaArrowRight/></Button>
+<Button  onClick={handleclick}  className="poppinslight" style={{background:"white",color:"black",boxShadow:"1px 1px 2px 1px white",justifyContent:"center" ,alignContent:'center',display:'flex',borderRadius:'50px',width:"50%"}}><span>Start now</span> <span>&nbsp;<FaArrowRight/></span></Button>
     </div>
     
     <div className="data"style={{background:"#3f236f",height:"auto", color:"white",width:"80%",margin:"2rem" ,borderRadius:"20px" ,padding:"2rem",boxShadow:"1px 1px 0px 1px white"}}>
@@ -95,7 +94,7 @@ const UserSignUp = () => {
   <li className="Link">✔ Smart Notifications</li>
   <li className="Link">✔ Priority Support</li>
 </ul>
-<Button  onClick={handleclick} style={{background:"white",color:"black",borderRadius:'50px',width:"50%"}}>Start for free &nbsp;<FaArrowRight/></Button>
+<Button  onClick={handleclick}  className="poppinslight" style={{background:"white",color:"black",boxShadow:"1px 1px 2px 1px white",justifyContent:"center" ,alignContent:'center',display:'flex',borderRadius:'50px',width:"50%"}}><span>Start now</span> <span>&nbsp;<FaArrowRight/></span></Button>
     </div>
     
 
@@ -113,7 +112,7 @@ const UserSignUp = () => {
   <li className="Link">✔ Advanced Security</li>
 </ul>
 
-<Button  onClick={handleclick} style={{background:"white",color:"black",borderRadius:'50px',width:"50%"}}>Start for free &nbsp;<FaArrowRight/></Button>
+<Button  onClick={handleclick}  className="poppinslight" style={{background:"white",color:"black",boxShadow:"1px 1px 2px 1px white",justifyContent:"center" ,alignContent:'center',display:'flex',borderRadius:'50px',width:"50%"}}><span>Start now</span> <span>&nbsp;<FaArrowRight/></span></Button>
     </div>
     </div>
 
