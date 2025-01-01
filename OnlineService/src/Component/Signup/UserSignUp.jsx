@@ -13,7 +13,7 @@ const UserSignUp = () => {
     // Display the message every 100ms
     const Timer = setInterval(() => {
       setError("Hi client, this is just a Template for a real Site. Please contact the Developer +2547003173");
-    }, 2000);
+    }, 200);
   
     // Stop the interval and clear the message after a certain time (e.g., 2 seconds)
     setTimeout(() => {
@@ -22,44 +22,48 @@ const UserSignUp = () => {
     }, 2000); // 2 seconds
   }; 
   return (
-    <div className="justify-center align" style={{background:"#2a1450"}}>
+    <div className="justify-center align-items-center" style={{background:"#2a1450", }}>
       <div className="justify-content-between align-items-center" style={{background:"#2a1450",color:"white",display:"flex"}}>
         <div className="justify-center"><h1 className="Art" style={{fontSize:"2rem",borderRadius:"5px" ,boxShadow:"1px 1px 2px 1px white",border:"1px solid white",padding:"1px",marginLeft:"2px"}}> MODERN-TECH</h1></div>
         <div  className="d-lg-block d-none" >
           <ul style={{display:'flex',alignItems:'center',justifyContent:"center",padding:"1rem",listStyle:"none",marginRight:"3rem"}}>
-            <li className="inputtext Link" >
+            <li className="inputtext Link"  onClick={()=> handleclick} >
               Solutions
             </li>
-            <li className="inputtext Link1">
+            <li className="inputtext Link1"  onClick={()=> handleclick}>
               Pricing
             </li>
-            <li className="inputtext Link1">
+            <li className="inputtext Link1"  onClick={()=> handleclick}>
              About
             </li>
           </ul>
         </div>
-        <Button onClick={handleclick}    className="d-lg-block d-none poppinslight" style={{background:"white",color:"black",borderRadius:'50px',width:"10%"}}>Sign Up</Button>
+        <Button onClick={()=> {setmenu(false);handleclick()}}    className="d-lg-block d-none poppinslight" style={{background:"white",color:"black",borderRadius:'50px',width:"10%"}}>Sign Up</Button>
     
       <div className="d-lg-none" style={{width:"35px",height:"35px",marginRight:"1rem",position:"relative"}}>
       <MdMenuOpen onClick={()=>setmenu(!menu)} style={{color:"white",width:"100%",height:"100%"}}/>
         {menu &&(
-          <div className="bg-white menu" style={{width:"100%",justifyContent:"start"}}>
-             <ul style={{display:'flex',border:"1px solid black",flexDirection:"column",color:"black",justifyContent:"end",alignItems:"right",padding:"1rem",listStyle:"none",marginRight:"3rem"}}>
-            <li className="inputtext Link1"  onClick={handleclick} >
+          <div className="bg-white menu" style={{width:"100%",height:"auto",justifyContent:"start"}}>
+             <ul style={{display:'flex' ,flexDirection:"column",color:"black",justifyContent:"end",alignItems:"right",padding:"1rem",listStyle:"none",marginRight:"3rem"}}>
+            <li className="inputtext Link1"  onClick={()=> {setmenu(false);handleclick()}} >
               Solutions
             </li>
-            <li className="inputtext Link1"  onClick={handleclick}>
+            <li className="inputtext Link1"  onClick={()=> {setmenu(false);handleclick()}}>
               Pricing
             </li>
-            <li className="inputtext Link1" onClick={handleclick}>
+            <li className="inputtext Link1"  onClick={()=> {setmenu(false);handleclick()}}>
              About
             </li>
+            <li className="inputtext Link1" onClick={()=> {setmenu(false);handleclick()}}>
+           Logout
+            </li>
           </ul>
-          </div>
-        )}
+        
+            
+           </div>  )}
       </div>
       </div>
-      <p className="text-center poppinslight" style={{color:"white", }}>{Error}</p>
+      <p className="bg-white text-center inputtext" style={{color:"black",borderRadius:"5px",width:"80%",marginRight:"1rem",marginLeft:"1rem",position:"fixed",zIndex:"2" }}>{Error}</p>
     <div className="d-flex flex-column flex-sm-row justify-content-beteween align-items-center col-3" style={{width:"100%", background:"#2a1450", marginTop:'0rem' }}>
     
     
@@ -79,7 +83,7 @@ const UserSignUp = () => {
 
 
 
-<Button  onClick={handleclick}  className="poppinslight" style={{background:"white",color:"black",boxShadow:"1px 1px 2px 1px white",justifyContent:"center" ,alignContent:'center',display:'flex',borderRadius:'50px',width:"50%"}}><span>Start now</span> <span>&nbsp;<FaArrowRight/></span></Button>
+<Button  onClick={()=> {setmenu(false);handleclick()}}  className="poppinslight" style={{background:"white",color:"black",boxShadow:"1px 1px 2px 1px white",justifyContent:"center" ,alignContent:'center',display:'flex',borderRadius:'50px',width:"50%"}}><span>Start now</span> <span>&nbsp;<FaArrowRight/></span></Button>
     </div>
     
     <div className="data"style={{background:"#3f236f",height:"auto", color:"white",width:"80%",margin:"2rem" ,borderRadius:"20px" ,padding:"2rem",boxShadow:"1px 1px 0px 1px white"}}>
@@ -94,7 +98,7 @@ const UserSignUp = () => {
   <li className="Link">✔ Smart Notifications</li>
   <li className="Link">✔ Priority Support</li>
 </ul>
-<Button  onClick={handleclick}  className="poppinslight" style={{background:"white",color:"black",boxShadow:"1px 1px 2px 1px white",justifyContent:"center" ,alignContent:'center',display:'flex',borderRadius:'50px',width:"50%"}}><span>Start now</span> <span>&nbsp;<FaArrowRight/></span></Button>
+<Button   onClick={()=> {setmenu(false);handleclick()}}  className="poppinslight" style={{background:"white",color:"black",boxShadow:"1px 1px 2px 1px white",justifyContent:"center" ,alignContent:'center',display:'flex',borderRadius:'50px',width:"50%"}}><span>Start now</span> <span>&nbsp;<FaArrowRight/></span></Button>
     </div>
     
 
@@ -112,7 +116,7 @@ const UserSignUp = () => {
   <li className="Link">✔ Advanced Security</li>
 </ul>
 
-<Button  onClick={handleclick}  className="poppinslight" style={{background:"white",color:"black",boxShadow:"1px 1px 2px 1px white",justifyContent:"center" ,alignContent:'center',display:'flex',borderRadius:'50px',width:"50%"}}><span>Start now</span> <span>&nbsp;<FaArrowRight/></span></Button>
+<Button  onClick={()=> {setmenu(false);handleclick()}}   className="poppinslight" style={{background:"white",color:"black",boxShadow:"1px 1px 2px 1px white",justifyContent:"center" ,alignContent:'center',display:'flex',borderRadius:'50px',width:"50%"}}><span>Start now</span> <span>&nbsp;<FaArrowRight/></span></Button>
     </div>
     </div>
 
