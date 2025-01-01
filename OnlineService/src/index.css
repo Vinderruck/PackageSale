@@ -35,3 +35,15 @@
     font-weight: 300;
     font-style: normal;
   }
+  .menu{
+    position:fixed;
+     width:50%;
+ left:0;
+ right:0;
+ margin-left:5rem;
+ border-radius:10px;
+ box-shadow:1px 1px 1px 1px black;
+ align-items:right;
+ justify-content:right;
+
+  }
